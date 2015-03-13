@@ -1,0 +1,42 @@
+# watson rc
+# watson - inline issue manager
+# [goosecode] labs
+
+
+# Directories
+[dirs]
+./
+
+# Tags
+[tags]
+fix
+review
+todo
+
+
+# Ignores
+[ignore]
+.git
+*.swp
+log
+bower_components
+node_modules
+.swf
+.png
+/vendor/
+dist
+
+
+[github_api]
+Melindrea
+
+
+[github_endpoint]
+https://api.github.com
+
+
+[github_repo]
+Melindrea/smaty.se
+
+
+
