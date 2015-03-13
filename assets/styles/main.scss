@@ -1,0 +1,284 @@
+// bower:scss
+// endbower
+
+html * {
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+@import "colours";
+@import "variables";
+
+@import "GGS";
+@import "typeplate-starter-kit/scss/typeplate";
+
+@import "layout";
+@import "navigation";
+@import "images";
+@import "list";
+
+@font-face {
+  font-family: 'Atreyu';
+  src: url('/assets/fonts/atreyu/Atreyu.otf') format('opentype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+  font-family: 'Linux Libertine';
+  src: url('/assets/fonts/linux-libertine/LinLibertine_R.otf') format('opentype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Linux Libertine';
+  src: url('/assets/fonts/linux-libertine/LinLibertine_RI.otf') format('opentype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Linux Libertine';
+  src: url('/assets/fonts/linux-libertine/LinLibertine_RBI.otf') format('opentype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Linux Libertine';
+  src: url('/assets/fonts/linux-libertine/LinLibertine_RB.otf') format('opentype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  font-weight: bold;
+  font-style: normal;
+}
+
+a {
+    color: darken($white, 20);
+
+    &:visited {
+        color: $white;
+    }
+
+    &:focus,
+    &:hover,
+    &:active {
+        text-shadow: 0 0 2px $sepia-light;
+    }
+}
+
+p {
+    margin-bottom: 1.75em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-shadow: 0 1px 0 rgba($sepia, 0.75);
+}
+
+body {
+    background-image: url('/assets/images/linen.jpg');
+    background-color: $teal;
+}
+
+h1,
+.site-title,
+#submenu h2,
+#top-navigation {
+    font-family: Atreyu, Linux Libertine, serif;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+main h1 {
+    text-align: center;
+}
+
+// Site header
+.site-title {
+    @extend .typl8-giga;
+    margin-bottom: 0;
+    color: $sepia-dark;
+    text-shadow: 0 0 2px $white;
+
+    a:link,
+    a:visited,
+    a:focus,
+    a:hover,
+    a:active {
+        color: $sepia-dark;
+        text-shadow: 0 0 2px $white;
+        text-decoration: none;
+    }
+
+    + p {
+        font-size: 0.9rem;
+        font-style: italic;
+        margin-bottom: 0;
+        text-indent: 2rem;
+    }
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+main header {
+    p {
+        color: lighten($white, 20);
+        font-size: 0.9rem;
+        font-style: italic;
+        text-indent: 0;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.byline {
+    font-style: italic;
+    color: lighten($white, 20);
+    font-size: 0.9rem;
+
+    &:before {
+        content: '— ';
+    }
+}
+
+[role=banner] {
+    padding-left: 2rem;
+}
+
+[role=contentinfo] {
+    font-size: 0.7rem;
+    text-align: center;
+    text-shadow: 0 0 2px $sepia-medium-light;
+    color: $sepia-light;
+    padding: 0.5rem;
+
+    ul {
+        @extend %inline-list;
+    }
+
+    li {
+        &:after {
+            content: '/';
+            padding-left: 2px;
+        }
+
+        &:last-child:after {
+            content: '';
+        }
+    }
+
+    a {
+        @extend %nav-anchor;
+
+        &:link,
+        &:visited,
+        &:hover,
+        &:active,
+        &:focus {
+            color: $sepia-light;
+        }
+    }
+}
+
+/* @media screen and (min-width: 540px) */
+@media screen and (min-width: 30em) {
+    main header {
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+
+        footer {
+            text-indent: 8rem;
+        }
+    }
+
+    .index main header {
+        box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.15);
+        padding: 8px;
+        padding-bottom: 12px;
+        background-color: #c0c0c0;
+        border: rgba(0, 0, 0, 0.2);
+        .no-rgba & {
+            border: #f9f9f9;
+        }
+        padding-top: 100px;
+        background-image: url('/assets/images/masthead-small.jpg');
+        padding-left: 50px;
+        height: 433px;
+        max-width: 800px;
+    }
+}
+
+@media screen and (min-width: 45em) {
+    html {
+        font-size: 112.5%;
+    }
+    .index main header {
+        padding-top: 250px;
+        padding-left: 60px;
+        background-image: url('/assets/images/masthead.jpg');
+        height: 568px;
+    }
+}
+
+@media screen and (min-width: 32em) {
+    .text-content p {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+}
+
+// Mailchimp
+#mc_embed_signup {
+    font-size: 1rem;
+    border-bottom: 1px solid $sepia;
+    margin-bottom: 0.5rem;
+    background: rgba($green, 0.5);
+    border-radius: 10px 10px 0 0;
+
+    form {
+        border-bottom: 1px solid $sepia-light;
+    }
+
+    p {
+        font-style: italic;
+        font-size: 0.9rem;
+    }
+
+    .button {
+        font-size: 0.9rem;
+        height: 24px;
+        line-height: 24px;
+        border-radius: 0;
+        font-weight: normal;
+        background: $green-light;
+        color: $sepia-medium-dark;
+        text-shadow: 0 0 2px $white;
+        font-weight: bold;
+
+        &:hover {
+            background: $green-medium-light;
+        }
+    }
+
+    .email {
+        margin-right: -5px;
+    }
+}

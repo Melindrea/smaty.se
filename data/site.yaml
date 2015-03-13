@@ -1,0 +1,43 @@
+# Assemble directories & options
+assemble:
+    system:
+        root: templates
+        layouts: layouts
+        helpers: helpers
+        partials: partials
+    content:
+        root: content
+    options:
+        layout: markdown
+
+site:
+    title: Smaty.se
+    titleSeparator: "||"
+    baseUrl: http://smaty.se
+
+navigation:
+    index:
+        path: /
+        item: Home
+    series:
+        path: /series
+        item: Series
+    characters:
+        path: /characters
+        item: Characters
+    locations:
+        path: /locations
+        item: Locations
+    stories:
+        path: /stories
+        item: Stories
+        children:
+            microfiction:
+                path: /stories/microfiction
+                item: Microfiction
+    author:
+        path: /author
+        item: Bio
+    contact:
+        path: /contact
+        item: Contact
