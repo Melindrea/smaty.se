@@ -99,7 +99,7 @@ assemble.task('fonts', function () {
 
 function bumpAndTag(importance) {
     // get all the files to bump version in
-    return assemble.src(['./package.json'])
+    return assemble.src(['./package.json'], {layout: null})
         // bump the version number in those files
         .pipe(bump({type: importance}))
         // save it back to filesystem
