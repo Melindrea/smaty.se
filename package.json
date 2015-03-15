@@ -57,6 +57,7 @@
     "jshint-stylish": "^1.0.0",
     "main-bower-files": "^2.5.0",
     "opn": "^1.0.0",
+    "remarkable": "^1.6.0",
     "rss": "^1.1.1",
     "sitemap": "^0.7.4",
     "sprintf-js": "^1.0.2",
@@ -72,6 +73,8 @@
     "assemble": "./node_modules/assemble/bin/assemble.js",
     "issues": "watson -s dirty",
     "issuesJson": "watson -s dirty --format json && mv .watsonresults watson.json",
-    "github": "watson --update --format silent"  
-}
+    "github": "watson --update --format silent",
+    "postinstall": "bower install && bundle install",
+    "deploy": "npm run assemble clean && export NODE_ENV=production; npm run assemble && gulp build && ./bin/deploy"
+  }
 }

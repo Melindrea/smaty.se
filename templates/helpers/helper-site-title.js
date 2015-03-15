@@ -5,5 +5,6 @@ module.exports.siteTitle = function (title) {
     if (this.context.src.name === 'index' || title === undefined) {
         return siteTitle;
     }
+
     return title + ' ' + titleSeparator + ' ' + siteTitle;
 };

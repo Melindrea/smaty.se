@@ -25,6 +25,10 @@ navigation:
     characters:
         path: /characters
         item: Characters
+        children:
+            bothildr-gudhleksdotter:
+                path: /characters/bothildr-gudhleksdotter
+                item: Bóthildr
     locations:
         path: /locations
         item: Locations
@@ -35,6 +39,9 @@ navigation:
             microfiction:
                 path: /stories/microfiction
                 item: Microfiction
+    wip-teasers:
+        path: /wip-teasers
+        item: Teasers
     author:
         path: /author
         item: Bio

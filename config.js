@@ -9,6 +9,7 @@ module.exports = (function () {
     argv = require('yargs').argv,
     dataDir = argv.dataDir || 'data',
     siteConfig =  YAML.load(dataDir + '/site.yaml'),
+    characterConfig =  YAML.load(dataDir + '/characters.yaml'),
     mediaConfig =  {},
     error = chalk.bold.red,
     warning = chalk.yellow,
@@ -23,6 +24,7 @@ module.exports = (function () {
             return {
                 env: 'local',
                 site: siteConfig,
+                character: characterConfig,
                 media: mediaConfig,
                 dataDir: dataDir,
                 pkg: pkg,
@@ -33,43 +35,20 @@ module.exports = (function () {
                 success: success,
                 gtm: 'GTM-N2JHDQ'
             };
-        case 'dev':
-        case 'development':
-            return {
-                env: 'dev',
-                site: siteConfig,
-                dataDir: dataDir,
-                pkg: pkg,
-                error: error,
-                warning: warning,
-                info: info,
-                debug: debug,
-                gtm: 'GTM-N2JHDQ'
-            };
-        case 'test':
-        case 'testing':
-            return {
-                env: 'test',
-                site: siteConfig,
-                dataDir: dataDir,
-                pkg: pkg,
-                error: error,
-                warning: warning,
-                info: info,
-                debug: debug,
-                gtm: 'GTM-N2JHDQ'
-            };
         case 'prod':
         case 'production':
             return {
                 env: 'prod',
                 site: siteConfig,
+                character: characterConfig,
+                media: mediaConfig,
                 dataDir: dataDir,
                 pkg: pkg,
                 error: error,
                 warning: warning,
                 info: info,
                 debug: debug,
+                success: success,
                 gtm: 'GTM-TK3LN4'
             };
         default:

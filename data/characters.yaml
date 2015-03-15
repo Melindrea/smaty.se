@@ -1,0 +1,61 @@
+questions:
+    - "What's your name"
+    - "How old are you"
+    - "What do you look like"
+    - "Where were you at the start of the story"
+    - "What did you want, when the story started"
+    - "Who are your parents"
+    - "What was your education like"
+    - "Do you make friends easily"
+    - "Do you have a best friend"
+    - "Can you get people to do what you want them to? If so, how"
+    - "Do you have scars? Where did they come from"
+    - "Can you navigate without getting lost? To what degree"
+    - "Can you bake a cake"
+    - "Do you know how to perform basic maintenance on a car"
+    - "Is there something you do that most other people don’t"
+    - "What is the most formative moment in your past"
+    - "Do you have any phobias"
+    - "What are some of your bad habits"
+    - "Do you have a moral code? To what extent are your actions dictated by this code"
+
+characters:
+    bothildr:
+        answers:
+            - "Bóthildr Gudhleksdotter, which means Bóthildr, daughter of Gudhlek"
+            - "I have seen nine-teen midwinter feasts"
+            - "I have blonde hair down to my shoulders and green eyes. Kóri calls my hair golden and my eyes 'vivid green', but he is a poet at heart"
+            - "Fleeing from my burned down village and my dead father"
+            - "To restore my family's honour by killing the foreign mare who murdered my father"
+            - "My father was Gudhlek Eriksson, smith in Grotjby. He was killed in an attack by foreign raiders. My mother was Jorunn Sigurdsdotter, and a talented merchant. She wasted away in a sickness that almost took my father as well"
+            - "Nanna taught me herbs and basic cures, my mother taught me to count, keep a household and magic, and my father taught me to shoot a bow, hunt and trap"
+            - "Yes, I think I do"
+            - "Arna Gormsdotter. We grew up together, and when she lost her husband during the attack, Kóri and I took her and her unborn child in"
+            - "Not really, unless it is very important to me"
+            - "Several, from when I helped fight of the Dál Riatan invaders"
+            - "On the ocean, you mean? Some, but I have only been out to fish, never on longer trips"
+            - "Yes, of course. My favourite is a nuts-and-blackberry"
+            - "A what?"
+            - "Most women do not know how to fight. Most people do not know how to weave good luck"
+            - "I am unsure. Either the first visit from Kóri where I realised what being his wife would mean, the death of my mother, or the death of my father"
+            - "No"
+            - "I crack my knuckles and hum to myself"
+            - "Of course. Honour and the family is more important than anything else"
+        names:
+            - "Bóthildr Smith's daughter"
+            - "Bóthildr Warrior"
+        status: alive
+        era: "Iron Age"
+        age: 19
+        origin: Ranrike
+        allegiance: Randulfr Ragnarsson
+        culture: Ranrike
+        family:
+            - "Gudhlek Eriksson, father (deceased)"
+            - "Jorunn Sigurdsdotter, mother (deceased)"
+            - "Saga Gudhleksdotter, sister (deceased)"
+            - "Gunnemar Gudhleksson, brother (deceased)"
+            - "Erik Gudhleksson, brother (deceased)"
+            - "Sigurd Gudhleksson, brother (deceased)"
+            - "Kóri Brandrsson, husband"
+            - "Vigar Kórisson, son"
