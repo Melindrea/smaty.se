@@ -1,0 +1,17 @@
+1. Work on feature branches (hotfix, feature, bug, watson)
+2. Pre-commit hooks to lint/test
+3. Message-prepend: Add [<issue type>/#<issue number>]: in front, unless WIP
+4. pre-message: Check format of message, unless WIP or watson
+5. Push feature branch to github!
+    * Make sure message doesn't start with WIP
+6. (GH) Start PR to staging, review PR, merge PR
+7. Pull down staging
+8. Sync watson
+9. Push staging to server
+10. (Server) run lint/test
+11. (ok) Bump version & tag
+12. (ok) Push tags to server
+    * (Server) merges staging with master, pushes master to Github
+    * (Server) builds site
+    * (Server) runs deploy script, rsync dist => prod
+13. Notify buffer (via e-mail?)
