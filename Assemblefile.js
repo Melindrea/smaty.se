@@ -80,13 +80,6 @@ assemble.task('resources', function () {
 
 });
 
-assemble.task('fonts', function () {
-    return assemble.src(require('main-bower-files')({
-            filter: '**/*.{eot,svg,ttf,woff,woff2}'
-        }).concat('assets/fonts/**/*'), {layout: null})
-        .pipe(assemble.dest(buildDir + '/assets/fonts'));
-});
-
 function bumpAndTag(importance) {
     // get all the files to bump version in
     return assemble.src(['./package.json'], {layout: null})
@@ -149,5 +142,5 @@ assemble.task('serve', ['clean', 'pages', 'styles', 'fonts'], function () {
     assemble.watch('assets/fonts/**/*', ['fonts']);
 });
 
-assemble.task('assets', ['jshint', 'styles', 'fonts']);
+assemble.task('assets', ['jshint', 'styles']);
 assemble.task('default', ['pages', 'assets', 'resources']);

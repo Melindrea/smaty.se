@@ -31,6 +31,13 @@ gulp.task('images', function () {
         .pipe(gulp.dest(buildDir + '/assets/images'));
 });
 
+gulp.task('fonts', function () {
+    return gulp.src(require('main-bower-files')({
+            filter: '**/*.{eot,svg,ttf,woff,woff2}'
+        }).concat('assets/fonts/**/*'))
+        .pipe(gulp.dest(buildDir + '/assets/fonts'));
+});
+
 gulp.task('html', function () {
     var userefAssets = useref.assets({searchPath: ['.tmp', 'assets', '.']}),
         jsFilter = filter('**/*.js'),
@@ -94,6 +101,6 @@ gulp.task('cache-busting', ['html'], function () {
 
 });
 
-gulp.task('build', ['html', 'images'], function () {
+gulp.task('build', ['html', 'images', 'fonts'], function () {
   return gulp.src(buildDir + '/**/*').pipe(gp.size({title: 'build', gzip: true}));
 });
