@@ -22,6 +22,7 @@
     "browser-sync": "^1.8.2",
     "chalk": "^1.0.0",
     "del": "^1.1.1",
+    "gh": "^1.11.4",
     "glob": "^4.3.1",
     "gulp": "^3.6.0",
     "gulp-bump": "^0.2.2",
@@ -74,6 +75,7 @@
     "issues": "watson -s dirty",
     "issuesJson": "watson -s dirty --format json && mv .watsonresults watson.json",
     "github": "watson --update --format silent",
+    "gh": "./node_modules/gh/bin/gh.js",
     "postinstall": "bower install && bundle install",
     "deploy": "npm run assemble clean && export NODE_ENV=production; npm run assemble && gulp build && ./bin/deploy"
   }
