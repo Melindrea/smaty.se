@@ -23,6 +23,9 @@ bower_components
 node_modules
 .swf
 .png
+.gif
+.ico
+.jpg
 /vendor/
 dist
 
