@@ -78,6 +78,7 @@
     "issuesJson": "watson -s dirty --format json && mv .watsonresults watson.json",
     "github": "watson --update --format silent",
     "postinstall": "bower install && bundle install",
-    "deploy": "npm run assemble clean && export NODE_ENV=production; npm run assemble && run build && ./bin/deploy"
+    "deploy": "npm run assemble clean && export NODE_ENV=production; npm run assemble && run build && ./bin/deploy",
+    "server": "cd dist && python -m SimpleHTTPServer 9000"
   }
 }
