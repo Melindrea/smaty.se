@@ -81,7 +81,8 @@
     "github": "watson --update --format silent",
     "gh": "./node_modules/gh/bin/gh.js",
     "postinstall": "bower install && bundle install",
-    "deploy": "npm run assemble clean && export NODE_ENV=production; npm run assemble && run build && ./bin/deploy",
+    "predeploy": "npm run assemble clean && export NODE_ENV=production; npm run assemble && gulp build && node lib/html-validator.js",
+    "deploy": "./bin/deploy",
     "server": "cd dist && python -m SimpleHTTPServer 9000"
   }
 }
