@@ -1,0 +1,19 @@
+%inner-container {
+    @include inner-container;
+}
+
+%container {
+    @include container;
+}
+
+%clearfix {
+    @include clearfix;
+}
+
+%stitched {
+    background: url('/assets/images/sepia-linen.jpg');
+    padding: 2rem;
+    border: 2px dashed $white;
+    border-radius: 10px;
+    box-shadow: 0 0 0 4px $sepia-medium-dark, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+}
