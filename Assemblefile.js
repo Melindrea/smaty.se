@@ -40,6 +40,7 @@ helpers = helperFiles.reduce(function (acc, fp) {
 assemble.layouts(system.root + '/' + system.layouts + '/**.hbs');
 assemble.helpers(helpers);
 assemble.partials(system.root + '/' + system.partials + '/**.hbs');
+assemble.data(system.root + '/data/**/*.{yaml,json}');
 
 assemble.option(config.site.assemble.options);
 assemble.option('site', config.site.site);
@@ -47,6 +48,8 @@ assemble.option('navigation', config.site.navigation);
 assemble.option('env', config.env);
 assemble.option('media', config.media);
 assemble.option('gtm', config.gtm);
+assemble.option('character', config.character);
+assemble.option('contentDir', content.root);
 
 assemble.task('pages', function () {
     var baseContentDir = content.root + '/pages';
@@ -72,28 +75,15 @@ assemble.task('styles', function () {
         .pipe(reload({stream: true}));
 });
 
-assemble.task('images', function () {
-    return assemble.src('assets/images/**/*')
-        .pipe(gp.cache(gp.imagemin({
-            progressive: true,
-            interlaced: true,
-            // don't remove IDs from SVGs, they are often used
-            // as hooks for embedding and styling
-            svgoPlugins: [{cleanupIDs: false}]
-        })))
-        .pipe(assemble.dest(buildDir + '/assets/images'));
-});
-
 assemble.task('resources', function () {
-        assemble.src('resources/**/*')
-        .pipe(assemble.dest(buildDir));
+        assemble.copy('resources/**/*', buildDir);
 
 });
 
 assemble.task('fonts', function () {
     return assemble.src(require('main-bower-files')({
             filter: '**/*.{eot,svg,ttf,woff,woff2}'
-        }).concat('assets/fonts/**/*'))
+        }).concat('assets/fonts/**/*'), {layout: null})
         .pipe(assemble.dest(buildDir + '/assets/fonts'));
 });
 
@@ -159,5 +149,5 @@ assemble.task('serve', ['clean', 'pages', 'styles', 'fonts'], function () {
     assemble.watch('assets/fonts/**/*', ['fonts']);
 });
 
-assemble.task('assets', ['jshint', 'styles', 'images', 'fonts']);
+assemble.task('assets', ['jshint', 'styles', 'fonts']);
 assemble.task('default', ['pages', 'assets', 'resources']);

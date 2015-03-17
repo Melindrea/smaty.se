@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rsync -avzh /src/git/smaty.se/dist/* /srv/web/smaty.se --delete
+rsync -rltvzp --checksum --delete ~/projects/smaty.se/dist/* root@vps:/srv/web/smaty.se

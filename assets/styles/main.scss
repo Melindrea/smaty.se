@@ -30,6 +30,7 @@ html * {
 @import "images";
 @import "list";
 
+// [todo] - Break out into another include
 @font-face {
   font-family: 'Atreyu';
   src: url('/assets/fonts/atreyu/Atreyu.otf') format('opentype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
@@ -92,7 +93,7 @@ body {
 
 h1,
 .site-title,
-#submenu h2,
+h2,
 #top-navigation {
     font-family: Atreyu, Linux Libertine, serif;
     font-weight: normal;
@@ -101,6 +102,17 @@ h1,
 
 main h1 {
     text-align: center;
+}
+
+.character-quote {
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+// Quotes
+blockquote {
+    font-style: italic;
+    margin: 0;
 }
 
 // Site header
@@ -219,7 +231,7 @@ main header {
             border: #f9f9f9;
         }
         padding-top: 100px;
-        background-image: url('/assets/images/masthead-small.jpg');
+        background-image: url('/assets/images/index-small.jpg');
         padding-left: 50px;
         height: 433px;
         max-width: 800px;
@@ -233,7 +245,7 @@ main header {
     .index main header {
         padding-top: 250px;
         padding-left: 60px;
-        background-image: url('/assets/images/masthead.jpg');
+        background-image: url('/assets/images/index.jpg');
         height: 568px;
     }
 }

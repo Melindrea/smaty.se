@@ -29,3 +29,50 @@ ol {
         }
     }
 }
+
+dt {
+    line-height: 1.65;
+    font-weight: bold;
+    &::after {
+        content: ': ';
+    }
+
+    &.inline {
+        display: inline;
+
+        & + dd {
+            margin-left: 0;
+            display: inline;
+
+            &::after {
+                content: '';
+                display: block;
+            }
+        }
+    }
+}
+
+.faq {
+    dt {
+        margin-top: 0.5rem;
+        &::after {
+            content: '? ';
+        }
+    }
+
+    dd {
+        &::after {
+            content: '.';
+        }
+    }
+}
+
+dd,
+ul,
+ol {
+    margin-left: 2rem;
+}
+dd.group {
+    display: list-item;
+    list-style: square inside;
+}

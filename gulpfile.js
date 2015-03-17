@@ -19,6 +19,18 @@ var gulp = require('gulp'),
     pkg = require('./package.json'),
     buildDir = pkg.config.buildDir;
 
+gulp.task('images', function () {
+    return gulp.src('assets/images/**/*')
+        .pipe(gp.cache(gp.imagemin({
+            progressive: true,
+            interlaced: true,
+            // don't remove IDs from SVGs, they are often used
+            // as hooks for embedding and styling
+            svgoPlugins: [{cleanupIDs: false}]
+        })))
+        .pipe(gulp.dest(buildDir + '/assets/images'));
+});
+
 gulp.task('html', function () {
     var userefAssets = useref.assets({searchPath: ['.tmp', 'assets', '.']}),
         jsFilter = filter('**/*.js'),
@@ -82,6 +94,6 @@ gulp.task('cache-busting', ['html'], function () {
 
 });
 
-gulp.task('build', ['html'], function () {
+gulp.task('build', ['html', 'images'], function () {
   return gulp.src(buildDir + '/**/*').pipe(gp.size({title: 'build', gzip: true}));
 });
