@@ -13,7 +13,7 @@ function extend(a, b) {
 var assemble = require('assemble'),
     typogr = require('gulp-typogr'),
     gp = require('gulp-load-plugins')(),
-    pleeease = require('gulp-pleeease'),
+    // pleeease = require('gulp-pleeease'),
     extname = require('gulp-extname'),
     git = require('gulp-git'),
     bump = require('gulp-bump'),
@@ -58,21 +58,6 @@ assemble.task('pages', function () {
         .pipe(extname())
         .pipe(permalinks())
         .pipe(assemble.dest('.tmp'));
-});
-
-assemble.task('styles', function () {
-    return assemble.src('assets/styles/main.scss', {layout: null})
-        .pipe(gp.sourcemaps.init())
-        .pipe(gp.sass({
-        outputStyle: 'nested', // libsass doesn't support expanded yet
-        precision: 10,
-        includePaths: ['.', './bower_components'],
-            onError: console.error.bind(console, 'Sass error:')
-        }))
-        .pipe(pleeease({browsers: ['last 1 version']}))
-        .pipe(gp.sourcemaps.write())
-        .pipe(assemble.dest('.tmp/assets/styles'))
-        .pipe(reload({stream: true}));
 });
 
 assemble.task('resources', function () {
@@ -142,5 +127,5 @@ assemble.task('serve', ['clean', 'pages', 'styles', 'fonts'], function () {
     assemble.watch('assets/fonts/**/*', ['fonts']);
 });
 
-assemble.task('assets', ['jshint', 'styles']);
+assemble.task('assets', ['jshint']);
 assemble.task('default', ['pages', 'assets', 'resources']);

@@ -9,10 +9,14 @@ var gulp = require('gulp'),
     path = require('path'),
     // revReplace = require('gulp-rev-replace'),
     useref = require('gulp-useref'),
+    pleeease = require('gulp-pleeease'),
     filter = require('gulp-filter'),
     uglify = require('gulp-uglify'),
+    jsValidate = require('gulp-jsvalidate'),
     csso = require('gulp-csso'),
     rename = require('gulp-rename'),
+    browserSync = require('browser-sync'),
+    reload = browserSync.reload,
     revCollector = require('gulp-rev-collector'),
     // htmlmin = require('gulp-htmlmin'),
     robots = require('gulp-robots'),
@@ -31,6 +35,23 @@ gulp.task('images', function () {
         .pipe(gulp.dest(buildDir + '/assets/images'));
 });
 
+gulp.task('styles', function () {
+    return gulp.src('assets/styles/main.scss', {layout: null})
+        .pipe(gp.sourcemaps.init())
+        .pipe(gp.sass({
+            outputStyle: 'nested', // libsass doesn't support expanded yet
+            precision: 10,
+            includePaths: ['.', './bower_components'],
+                onError: console.error.bind(console, 'Sass error:')
+            })
+        )
+        .pipe(pleeease({browsers: ['last 1 version']}))
+        .pipe(gp.sourcemaps.write())
+        .pipe(gulp.dest('.tmp/assets/styles'))
+        .pipe(reload({stream: true}));
+});
+
+
 gulp.task('fonts', function () {
     return gulp.src(require('main-bower-files')({
             filter: '**/*.{eot,svg,ttf,woff,woff2}'
@@ -38,7 +59,7 @@ gulp.task('fonts', function () {
         .pipe(gulp.dest(buildDir + '/assets/fonts'));
 });
 
-gulp.task('html', function () {
+gulp.task('html', ['styles'], function () {
     var userefAssets = useref.assets({searchPath: ['.tmp', 'assets', '.']}),
         jsFilter = filter('**/*.js'),
         cssFilter = filter('**/*.css'),
@@ -49,6 +70,7 @@ gulp.task('html', function () {
         .pipe(robots({ out: buildDir + '/robots.txt' }))
         .pipe(userefAssets)      // Concatenate with gulp-useref
             .pipe(jsFilter)
+                .pipe(jsValidate())
                 .pipe(uglify())             // Minify any javascript sources
             .pipe(jsFilter.restore())
             .pipe(cssFilter)
