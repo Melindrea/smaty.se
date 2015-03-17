@@ -11,7 +11,7 @@ assemble:
         layout: markdown
 
 site:
-    title: Smaty.se
+    title: Småty in the land
     titleSeparator: "||"
     baseUrl: http://smaty.se
 
