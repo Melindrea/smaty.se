@@ -13,7 +13,6 @@ assemble:
 site:
     title: Småty in the land
     titleSeparator: "||"
-    baseUrl: http://smaty.se
 
 navigation:
     index:
