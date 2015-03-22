@@ -39,6 +39,9 @@ navigation:
             microfiction:
                 path: /stories/microfiction
                 item: Microfiction
+            nanowrimo:
+                path: /stories/nanowrimo
+                item: NaNoWriMo
     wip-teasers:
         path: /wip-teasers
         item: Teasers
