@@ -15,7 +15,8 @@
   },
   "version": "1.0.0",
   "config": {
-    "buildDir": "dist"
+    "buildDir": "build",
+    "deployDir": "build/Release"
   },
   "devDependencies": {
     "assemble": "git://github.com/assemble/assemble.git#v0.6.0",
@@ -42,6 +43,7 @@
     "gulp-pleeease": "^1.2.0",
     "gulp-rename": "^1.2.0",
     "gulp-rev": "^3.0.1",
+    "gulp-rev-all": "^0.7.6",
     "gulp-rev-collector": "^0.1.4",
     "gulp-rev-css-url": "0.0.11",
     "gulp-robots": "^1.1.2",
@@ -82,8 +84,10 @@
     "github": "watson --update --format silent",
     "gh": "./node_modules/gh/bin/gh.js",
     "postinstall": "bower install && bundle install",
-    "predeploy": "npm run assemble clean && export NODE_ENV=production; npm run assemble && gulp build && node lib/html-validator.js",
-    "deploy": "./bin/deploy",
-    "server": "cd dist && python -m SimpleHTTPServer 9000"
+    "predeploy": "export NODE_ENV=production; npm run build",
+    "deploy": "gulp cache-busting && ./bin/deploy",
+    "predrydeploy": "npm run predeploy",
+    "drydeploy": "gulp cache-busting",
+    "server": "cd build && python -m SimpleHTTPServer 9000"
   }
 }
