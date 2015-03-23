@@ -8,6 +8,7 @@ var gulp = require('gulp'),
     revall = require('gulp-rev-all'),
     pleeease = require('gulp-pleeease'),
     filter = require('gulp-filter'),
+    smoosher = require('gulp-smoosher'),
     uglify = require('gulp-uglify'),
     jsValidate = require('gulp-jsvalidate'),
     csso = require('gulp-csso'),
@@ -88,6 +89,9 @@ gulp.task('html', ['fonts', 'styles', 'images'], function () {
             if (path.extname === '.html' && path.basename !== 'index') {
                 path.basename = 'index';
             }
+        }))
+        .pipe(smoosher({
+            base: '.'
         }))
         .pipe(gulp.dest(buildDir))
         .pipe(htmlFilter)
