@@ -3,8 +3,6 @@
 
 /* Feel free to copy&paste color codes to your application */
 
-
-/* MIXINS */
 $color-primary-0: #6D481C;	/* Main Primary color */
 $color-primary-1: #B08858;
 $color-primary-2: #8B6435;
@@ -87,38 +85,53 @@ $black: $sepia-dark;
 
 .color-table {
     margin: 2em 2em 5em;
-    border-collapse:collapse;
-    border:none;
-    border-spacing:0;
-    font-size:100%;
-    }
-.color-table th {
-    padding: 0 1em 0 0;
-    text-align: right;
-    vertical-align: middle;
-    font-size: 100%;
-    font-weight: normal;
+    border-collapse: collapse;
     border: none;
+    border-spacing: 0;
+    font-size: 100%;
+
+    th {
+        padding: 0 1em 0 0;
+        text-align: right;
+        vertical-align: middle;
+        font-size: 100%;
+        font-weight: normal;
+        border: none;
     }
-.color-table td.sample {
-    width:6em; height:6em;
-    padding: 10px;
-    text-align:center;
-    vertical-align:middle;
-    font-size:90%;
-    border: 1px solid white;
-    white-space:nowrap;
+
+    td.sample {
+        width: 6em;
+        height: 6em;
+        padding: 10px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 90%;
+        border: 1px solid white;
+        white-space: nowrap;
     }
-.color-table td.sample-0 {
-    width:18em;
+
+    td.sample-0 {
+        width: 18em;
     }
-.color-table.small td.sample {
-    width:3em; height:3em;
-    padding:0;
-    border:none;
+
+    &.small td.sample {
+        width: 3em;
+        height: 3em;
+        padding: 0;
+        border: none;
     }
-.color-table.small td.sample-0 {
-    width:9em;
+
+    &.small td.sample-0 {
+        width: 9em;
     }
-.color-table .white { margin-bottom:0.2em; color:white }
-.color-table .black { margin-top:0.2em; color:black }
+
+    .white {
+        margin-bottom:0.2em;
+        color:white
+    }
+
+    .black {
+        margin-top: 0.2em;
+        color:black
+    }
+}

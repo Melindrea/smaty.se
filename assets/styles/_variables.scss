@@ -4,6 +4,7 @@
 
 $line: 24;
 $column: 100% / 18;
+$base-margin: 2rem;
 
 // $Base
 // -------------------------------------//
@@ -15,8 +16,7 @@ $column: 100% / 18;
 // $typl8-font-family               non-font-face stack
 
 $typl8-serif-boolean: true !default;
-$typl8-custom-font: Linux Libertine;
-$typl8-font-family: if($typl8-serif-boolean, serif, sans-serif) !default;
+$typl8-font-family: Georgia, serif;
 $typl8-font-weight: normal !default;
 $typl8-line-height: 1.2 !default;
 $typl8-font-size: 100 !default;

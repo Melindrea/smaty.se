@@ -30,6 +30,12 @@ ol {
     }
 }
 
+dd,
+ul,
+ol {
+    margin-left: $base-margin;
+}
+
 dt {
     line-height: 1.65;
     font-weight: bold;
@@ -67,11 +73,6 @@ dt {
     }
 }
 
-dd,
-ul,
-ol {
-    margin-left: 2rem;
-}
 dd.group {
     display: list-item;
     list-style: square inside;

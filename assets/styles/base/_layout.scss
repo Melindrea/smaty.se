@@ -6,66 +6,6 @@
 *
 */
 
-// ==========================================================================
-//   Mixins, functions and anonymous styles
-// ==========================================================================
-
-//-- Percentage for columns
-@function calc-span( $span: 1, $columns: 16, $margin: 0 ) {
-    @return (100%/$columns)*$span - (2*$margin);
-}
-
-//-- Gutterwidth, not returned in ems, to get ems: #{calc-gutter()}em
-  @function calc-gutter( $span: 1, $font-size: $typl8-font-size, $line-height: $typl8-line-height) {
-    @return (($line-height/2)/$font-size)*$span;
-}
-
-//-- Based on http://goldengridsystem.com/
-//-- Container for holding other elements
-@mixin container($sides: 1, $top: 2)
-{
-    margin: #{$top*calc-gutter()}rem $sides*$column;
-}
-
-%container {
-    @include container;
-}
-
-//-- Simple elastic gutters
-//-- Note: box-sizing will not work in IE6-7
-@mixin inner-container {
-    padding: 0 #{calc-gutter()}em;
-}
-%inner-container {
-    @include inner-container;
-}
-
-// Clearfix
-// --------
-// For clearing floats like a boss h5bp.com/q
-@mixin clearfix {
-  *zoom: 1;
-  &:before,
-  &:after {
-    display: table;
-    content: "";
-    // Fixes Opera/contenteditable bug:
-    // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
-    line-height: 0;
-  }
-  &:after {
-    clear: both;
-  }
-}
-
-/*
-*
-* Zoomable baseline grid
-* type size presets
-*
-*/
-
-
 /*
 *
 *  Four-column grid active
@@ -76,23 +16,11 @@
 */
 
 /*
-*  Simple elastic gutters
-*  Note: box-sizing will not work in IE6-7
-*/
-
-.wrapper {
-    padding: 0 #{($line/2)/$em}em;
-    box-sizing: border-box;
-}
-
-
-/*
 *
 *  Fixes for IE6-8
 *  http://jonikorpi.com/leaving-old-IE-behind/
 *
 */
-
 .ie body {
   width: #{640/$em}em;
   margin: 0 auto;
@@ -169,9 +97,52 @@
 /* @media screen and (min-width: 2080px) */
 @media screen and (min-width: 130em) {
 
-  body {
-    /* Zoom baseline grid to 18/16 = 1.125 */
-    max-width: (2560/$em)em;
-  }
+    body {
+        /* Zoom baseline grid to 18/16 = 1.125 */
+        max-width: (2560/$em)em;
+    }
 
+}
+
+.l-container {
+    @extend %container;
+    @extend %clearfix;
+}
+
+[role=banner],
+main,
+[role=contentinfo],
+[role=complementary] nav,
+#author-box {
+    @extend %design-box;
+}
+
+@media screen and (min-width: 40em) {
+    [role=complementary],
+    main {
+        float: left;
+    }
+
+    [role=complementary] {
+         width: calc-span(3, 8);
+         padding-right: $base-margin;
+    }
+
+    main {
+         width: calc-span(5, 8);
+    }
+}
+
+@media screen and (min-width: 60em) {
+    main p {
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+}
+
+@media screen and (min-width: 90em) {
+    main p {
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
 }

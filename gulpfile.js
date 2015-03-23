@@ -40,6 +40,7 @@ gulp.task('styles', function () {
             outputStyle: 'nested', // libsass doesn't support expanded yet
             precision: 10,
             includePaths: ['.', './bower_components'],
+            // [todo] - Error out when there's Sass errors instead
                 onError: console.error.bind(console, 'Sass error:')
             })
         )
