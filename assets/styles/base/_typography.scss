@@ -1,0 +1,35 @@
+@import "typeplate-starter-kit/scss/typeplate";
+@import "typeface";
+
+p {
+    margin-bottom: 1.75em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-shadow: 0 1px 0 rgba($sepia, 0.75);
+}
+
+h1,
+.site-title,
+h2,
+#top-navigation {
+    @extend %atreyu;
+}
+
+html.fonts-loaded {
+    font-family: Linux Libertine, Georgia, serif;
+}
+main h1 {
+    text-align: center;
+}
+
+.character-quote {
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+// Quotes
+blockquote {
+    font-style: italic;
+    margin: 0;
+}

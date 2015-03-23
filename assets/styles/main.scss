@@ -12,69 +12,22 @@ html * {
 @import "system/functions";
 @import "system/anonymous-styles";
 
-// Bower
-@import "typeplate-starter-kit/scss/typeplate";
+@import "base/typography";
+@import "base/layout";
+@import "base/images";
+@import "base/list";
+@import "base/links";
 
-@import "typeface";
-
-@import "layout";
 @import "navigation";
-@import "images";
-@import "list";
 
 .clearfix {
     @extend %clearfix;
 }
 
-a {
-    color: darken($white, 20);
-
-    &:visited {
-        color: $white;
-    }
-
-    &:focus,
-    &:hover,
-    &:active {
-        text-shadow: 0 0 2px $sepia-light;
-    }
-}
-
-p {
-    margin-bottom: 1.75em;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    text-shadow: 0 1px 0 rgba($sepia, 0.75);
-}
 
 body {
     background-image: url('/assets/images/linen.jpg');
     background-color: $teal;
-}
-
-h1,
-.site-title,
-h2,
-#top-navigation {
-    font-family: Atreyu, Linux Libertine, serif;
-    font-weight: normal;
-    letter-spacing: 2px;
-}
-
-main h1 {
-    text-align: center;
-}
-
-.character-quote {
-    float: left;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-}
-// Quotes
-blockquote {
-    font-style: italic;
-    margin: 0;
 }
 
 // Site header
@@ -127,6 +80,25 @@ main header {
 
     &:before {
         content: '— ';
+    }
+}
+
+#author-box {
+    border: lighten($green-light, 20) 2px dashed;
+    color: lighten($green-light, 20);
+    font-style: italic;
+    @extend %clearfix;
+
+    img {
+        padding-bottom: $base-margin;
+        margin: 0 auto 1.5rem;
+        height: auto;
+        background-color: #e2e0de;
+        transform: rotate(10deg);
+    }
+
+    p {
+        margin-bottom: 0;
     }
 }
 

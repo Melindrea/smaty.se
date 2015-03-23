@@ -6,16 +6,6 @@
 *
 */
 
-
-
-/*
-*
-* Zoomable baseline grid
-* type size presets
-*
-*/
-
-
 /*
 *
 *  Four-column grid active
@@ -26,23 +16,11 @@
 */
 
 /*
-*  Simple elastic gutters
-*  Note: box-sizing will not work in IE6-7
-*/
-
-.wrapper {
-    padding: 0 #{($line/2)/$em}em;
-    box-sizing: border-box;
-}
-
-
-/*
 *
 *  Fixes for IE6-8
 *  http://jonikorpi.com/leaving-old-IE-behind/
 *
 */
-
 .ie body {
   width: #{640/$em}em;
   margin: 0 auto;
@@ -136,28 +114,7 @@ main,
 [role=contentinfo],
 [role=complementary] nav,
 #author-box {
-    @extend %inner-container;
-    @extend %stitched;
-    margin-bottom: 2rem;
-}
-
-#author-box {
-    border: lighten($green-light, 20) 2px dashed;
-    color: lighten($green-light, 20);
-    font-style: italic;
-    @extend %clearfix;
-
-    img {
-        padding-bottom: 2rem;
-        margin: 0 auto 1.5rem;
-        height: auto;
-        background-color: #e2e0de;
-        transform: rotate(10deg);
-    }
-
-    p {
-        margin-bottom: 0;
-    }
+    @extend %design-box;
 }
 
 @media screen and (min-width: 40em) {
@@ -168,7 +125,7 @@ main,
 
     [role=complementary] {
          width: calc-span(3, 8);
-         padding-right: 2rem;
+         padding-right: $base-margin;
     }
 
     main {
