@@ -27,7 +27,7 @@ node_modules
 # Users Environment Variables
 .lock-wscript
 bower_components
-dist
 secrets.json
 .tmp
 .DS_Store
+build

@@ -13,6 +13,7 @@ function extend(a, b) {
 var assemble = require('assemble'),
     typogr = require('gulp-typogr'),
     gp = require('gulp-load-plugins')(),
+    inlineCss = require('gulp-inline-css'),
     // pleeease = require('gulp-pleeease'),
     extname = require('gulp-extname'),
     git = require('gulp-git'),
@@ -57,6 +58,15 @@ assemble.task('pages', function () {
         .pipe(typogr())
         .pipe(extname())
         .pipe(permalinks())
+        .pipe(assemble.dest('.tmp'));
+});
+
+assemble.task('newsletters', function () {
+    var baseContentDir = content.root + '/newsletters';
+    assemble.src(baseContentDir + '/**/*.md', {layout: 'email'})
+        .pipe(typogr())
+        .pipe(inlineCss())
+        .pipe(extname())
         .pipe(assemble.dest('.tmp'));
 });
 

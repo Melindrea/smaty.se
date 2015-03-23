@@ -13,7 +13,6 @@ assemble:
 site:
     title: Småty in the land
     titleSeparator: "||"
-    baseUrl: http://smaty.se
 
 navigation:
     index:
@@ -39,6 +38,9 @@ navigation:
             microfiction:
                 path: /stories/microfiction
                 item: Microfiction
+            nanowrimo:
+                path: /stories/nanowrimo
+                item: NaNoWriMo
     wip-teasers:
         path: /wip-teasers
         item: Teasers
