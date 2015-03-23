@@ -25,7 +25,6 @@ var assemble = require('assemble'),
     reload = browserSync.reload,
     config = require('./config.js'),
     buildDir = config.pkg.config.buildDir,
-    deployDir = config.pkg.config.deployDir,
     system = config.site.assemble.system,
     content = config.site.assemble.content,
 
