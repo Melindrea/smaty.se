@@ -5,17 +5,17 @@ var chalk = require('chalk');
 // Based on http://blog.codehatcher.com/node-js-alternate-config-file
 module.exports = (function () {
     var pkg = require('./package.json'),
-    YAML = require('yamljs'),
-    argv = require('yargs').argv,
-    dataDir = argv.dataDir || 'data',
-    siteConfig =  YAML.load(dataDir + '/site.yaml'),
-    characterConfig =  YAML.load(dataDir + '/characters.yaml'),
-    mediaConfig =  {},
-    error = chalk.bold.red,
-    warning = chalk.yellow,
-    info = chalk.cyan,
-    debug = chalk.blue,
-    success = chalk.bold;
+        YAML = require('yamljs'),
+        argv = require('yargs').argv,
+        dataDir = argv.dataDir || 'data',
+        siteConfig =  YAML.load(dataDir + '/site.yaml'),
+        characterConfig =  YAML.load(dataDir + '/characters.yaml'),
+        mediaConfig =  {},
+        error = chalk.bold.red,
+        warning = chalk.yellow,
+        info = chalk.cyan,
+        debug = chalk.blue,
+        success = chalk.bold;
 
     switch (process.env.NODE_ENV) {
         case null:

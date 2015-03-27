@@ -40,6 +40,7 @@ helpers = helperFiles.reduce(function (acc, fp) {
 // Load system - These three should be broken out and put in assemble-system
 assemble.layouts(system.root + '/' + system.layouts + '/**.hbs');
 assemble.helpers(helpers);
+assemble.helper('moment', require('helper-moment'));
 assemble.partials(system.root + '/' + system.partials + '/**.hbs');
 assemble.data(system.root + '/data/**/*.{yaml,json}');
 
