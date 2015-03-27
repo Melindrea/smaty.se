@@ -44,6 +44,9 @@ characters:
         names:
             - "Bóthildr Smith's daughter"
             - "Bóthildr Warrior"
+        pronouns: She
+        stories:
+            - Awaiting Valhalla
         status: alive
         era: "Iron Age"
         age: 19
@@ -59,3 +62,36 @@ characters:
             - "Sigurd Gudhleksson, brother (deceased)"
             - "Kóri Brandrsson, husband"
             - "Vigar Kórisson, son"
+    mio:
+        answers:
+            - "Legally, or the name I've taken for myself? If the second, Mio Singh. I'd prefer not to share my legal name, if it's all the same"
+            - "I'm twenty-five"
+            - "Do I have to ...? Okay. Blonde. Blue eyes. Average height, I guess. I'm not a 'rye-blonde Nordic viking', if that's what you're asking. I am pleased that I finally managed to grow a beard, though"
+            - "On an island in the Bohuslän archipelago, fleeing from my pain after miscarrying"
+            - "Get a family. Or, if that's impossible, at least not be in pain anymore"
+            - "I haven't the faintest. My earliest memories are from foster parents in Tanumshede, and I was five or six then"
+            - "School, I guess. Dropped out when I was 18, though Gabriel has been trying to get me to go back. I'm good with my hands, though, so do I really need a piece of paper saying I can read and write? I don't think so"
+            - "Not really. I'm a rather private person"
+            - "I guess that's probably Gabriel. I used to think he was my everything, but when I told him I was pregnant things changed. I think he was happy when I miscarried"
+            - "Not really. I can't even stop them from misgendering me"
+            - "The biggest is probably on my upper arm. I was at a party when I was sixteen or so. Some guy were picking a fight, and I decided to give it to him. I won, and got two years in juvie for my troubles"
+            - "Assuming I have chart and some way to figure out directions, sure. I even know how to sail"
+            - "I ... what kind of question is that? No. I don't"
+            - "If it has a motor, I can fix it"
+            - "I see ghosts. Or, at least, I think so. Does that count?"
+            - "When I in juvie first heard the word 'trans', and got a name for my feelings. Especially the bit where gender is a spectrum, and it's okay that I don't really have a gender. I'm still far more of a man than a woman though. I hate my stupid body! I guess that another formative moment have to be when I met Jasbir Singh. He first taught me what it is to be Sikh, and for the first time in my life I had faith"
+            - "Cramped spaces, and heights"
+            - "I have a bad temper, but I'm working on it"
+            - "Doesn't everyone? I do my best to treat everyone with respect"
+        status: alive
+        pronouns: They
+        stories:
+            - The Angel Maker (working title)
+        era: Contemporary
+        age: 25
+        origin: Sweden
+        allegiance: Unaligned
+        culture: Swedish
+        family:
+            - "Gabriel Vinge, spouse"
+            - "Jasbir Singh, mentor"

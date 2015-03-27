@@ -28,6 +28,9 @@ navigation:
             bothildr-gudhleksdotter:
                 path: /characters/bothildr-gudhleksdotter
                 item: Bóthildr
+            mio-singh:
+                path: /characters/mio-singh
+                item: Mio
     locations:
         path: /locations
         item: Locations
