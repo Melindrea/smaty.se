@@ -13,6 +13,7 @@ function extend(a, b) {
 var assemble = require('assemble'),
     typogr = require('gulp-typogr'),
     gp = require('gulp-load-plugins')(),
+    // sitemap = require('gulp-sitemap'),
     inlineCss = require('gulp-inline-css'),
     // pleeease = require('gulp-pleeease'),
     extname = require('gulp-extname'),

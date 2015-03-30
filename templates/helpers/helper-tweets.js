@@ -5,11 +5,8 @@ module.exports.tweets = function (key) {
         tweetConfig =  YAML.load(__dirname + '/../../data/tweets.yaml'),
         tweets;
 
-    if (! key in tweetConfig) {
-        return;
+    if (key in tweetConfig) {
+        tweets = tweetConfig[key].content;
+        return new Handlebars.SafeString(tweets.join('\n'));
     }
-
-    tweets = tweetConfig[key].content;
-
-    return new Handlebars.SafeString(tweets.join('\n'));
 };

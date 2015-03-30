@@ -17,6 +17,8 @@ var gulp = require('gulp'),
     reload = browserSync.reload,
     // htmlmin = require('gulp-htmlmin'),
     robots = require('gulp-robots'),
+    extname = require('gulp-extname'),
+    permalinks = require('./lib/permalinks.js'),
     pkg = require('./package.json'),
     buildDir = pkg.config.buildDir,
     deployDir = pkg.config.deployDir;
@@ -61,8 +63,7 @@ gulp.task('fonts', function () {
 gulp.task('html', ['fonts', 'styles', 'images'], function () {
     var userefAssets = useref.assets({searchPath: ['.tmp', 'assets', '.']}),
         jsFilter = filter('**/*.js'),
-        cssFilter = filter('**/*.css'),
-        htmlFilter = filter('**/*.html');
+        cssFilter = filter('**/*.css');
 
 
     return gulp.src('.tmp/**/*.html')
@@ -94,13 +95,16 @@ gulp.task('html', ['fonts', 'styles', 'images'], function () {
         .pipe(smoosher({
             base: '.'
         }))
-        .pipe(gulp.dest(buildDir))
-        .pipe(htmlFilter)
+        .pipe(gulp.dest(buildDir));
+});
+
+gulp.task('sitemap',function () {
+    return gulp.src('content/pages/**/*.md')
+        .pipe(permalinks(true))
         .pipe(sitemap({
                 siteUrl: pkg.homepage
         })) // Returns sitemap.xml
-        .pipe(gulp.dest(buildDir))
-        .pipe(htmlFilter.restore());
+        .pipe(gulp.dest(buildDir));
 });
 
 gulp.task('cache-busting', function () {
@@ -109,6 +113,6 @@ gulp.task('cache-busting', function () {
         .pipe(gulp.dest(deployDir));
 });
 
-gulp.task('build', ['html'], function () {
+gulp.task('build', ['html', 'sitemap'], function () {
   return gulp.src(buildDir + '/**/*').pipe(gp.size({title: 'build', gzip: true}));
 });
