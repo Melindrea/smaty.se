@@ -62,6 +62,41 @@ characters:
             - "Sigurd Gudhleksson, brother (deceased)"
             - "Kóri Brandrsson, husband"
             - "Vigar Kórisson, son"
+    katja:
+        answers:
+            - "Katja Bradley"
+            - "It's rude to ask a woman's age"
+            - "Black braids, black eyes, and with a flair for colourful fasion. Athletic, I guess"
+            - "Dealing with nightmares about the dead, after I a month earlier made a deal I didn't understand at the time. Still worth it, though"
+            - "To further my career, and be happy with my lovely girlfriend Sia"
+            - "Thomas and Magdalene. Dad's African-American and came to Sweden during the Vietnam war. Mom was a model who turned sewing teacher after she met Dad"
+            - "Fairly standard. Basic years in Hudiksvall, and went to Stockholm to study sewing and patterns. I always knew I wanted to become a fashion designer"
+            - "Oh, yes. Really easily infact. I love meeting new people"
+            - "Not really, though Andrej is a really close friend, and Sia's more than friends, but also a good friend"
+            - "Yes, I have a knack for talking people into things"
+            - "None as of yet, but I'm expecting that'll change"
+            - "If you put a map in my hand I'll ... be sure to be lost"
+            - "Occasionally, but I prefer buying them"
+            - "Very basic, sure"
+            - "Sew, I guess. Fight with spears. Ride massive wolves into battle"
+            - "I think, honestly, the fights my parents used to have. Made me quite certain to never tie myself up in a committed relationship"
+            - "Only if you count 'committed relationships'"
+            - "I snore and pick my teeth"
+            - "I never thought so. Lately, I'm not as sure"
+        pronouns: She
+        stories:
+            - (Three unnamed novels)
+        status: alive
+        era: Contemporary
+        age: 27
+        origin: "Hudiksvall, Sweden"
+        allegiance: Freja
+        culture: Swedish
+        family:
+            - "Thomas Bradley, father"
+            - "Magdalene Bradley, mother"
+            - "Robert Bradley, brother"
+            - "Sia Starholm, girlfriend"
     mio:
         answers:
             - "Legally, or the name I've taken for myself? If the second, Mio Singh. I'd prefer not to share my legal name, if it's all the same"
@@ -89,7 +124,7 @@ characters:
             - The Angel Maker (working title)
         era: Contemporary
         age: 25
-        origin: Sweden
+        origin: "Grebbestad, Sweden"
         allegiance: Unaligned
         culture: Swedish
         family:

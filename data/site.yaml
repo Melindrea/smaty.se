@@ -28,6 +28,9 @@ navigation:
             bothildr-gudhleksdotter:
                 path: /characters/bothildr-gudhleksdotter
                 item: Bóthildr
+            katja-bradley:
+                path: /characters/katja-bradley
+                item: Katja
             mio-singh:
                 path: /characters/mio-singh
                 item: Mio
