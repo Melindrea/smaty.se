@@ -54,7 +54,7 @@ assemble.option('gtm', config.gtm);
 assemble.option('character', config.character);
 assemble.option('contentDir', content.root);
 
-assemble.task('pages', function () {
+assemble.task('pages', ['jshint'], function () {
     var baseContentDir = content.root + '/pages';
     assemble.src(baseContentDir + '/**/*.md')
         .pipe(typogr())
