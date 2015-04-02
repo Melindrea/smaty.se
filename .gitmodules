@@ -4,3 +4,6 @@
 [submodule "lib"]
 	path = lib
 	url = git@github.com:Melindrea/nodejs-lib.git
+[submodule "templates"]
+	path = templates
+	url = git@github.com:Melindrea/nodejs-templates.git
