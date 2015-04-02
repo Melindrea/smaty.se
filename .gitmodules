@@ -1,3 +1,6 @@
 [submodule "content"]
 	path = content
 	url = git@github.com:Melindrea/smaty.se-content.git
+[submodule "lib"]
+	path = lib
+	url = git@github.com:Melindrea/nodejs-lib.git
