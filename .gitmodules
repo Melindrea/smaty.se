@@ -7,3 +7,6 @@
 [submodule "templates"]
 	path = templates
 	url = git@github.com:Melindrea/nodejs-templates.git
+[submodule "assets"]
+	path = assets
+	url = git@github.com:Melindrea/smaty.se-assets.git
