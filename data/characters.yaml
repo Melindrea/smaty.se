@@ -72,7 +72,7 @@ characters:
             - "My father was Yngve Agrarsson, a chieftain in Viken. He bought my mother from a merchant on one of his travels, and gave her the name Svaneblau--the Black Swan. He loved her so much that he married her, despite everything. And she loved him"
             - "My mother taught me songs from her homeland, and my stepmother Torun Hildingsdotter taught what I would need to know as my father's heir. I think it hurt her that she could never bear my father a son, but she never took it out on me. I think she loved me like a daughter"
             - "Yes, I do"
-            - "Ingrid Sigurdsdotter. She was born a thrall on my father's estate, and is a few years younger than I am"
+            - "Saga. She was born a thrall on my father's estate, and is a few years younger than I am"
             - "Yes, I can talk people into a lot of things"
             - "Above my left eye. I fell from a horse"
             - "Decently. My father thought it was important I knew how to"
@@ -98,7 +98,7 @@ characters:
         culture: Norwegian
         family:
             - "Yngve Agrarsson, father (deceased)"
-            - "Svanebalu, mother (deceased)"
+            - "Svaneblau, mother (deceased)"
             - "Torun Hildingsdotter, stepmother (deceased)"
     katja:
         answers:
