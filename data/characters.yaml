@@ -62,6 +62,44 @@ characters:
             - "Sigurd Gudhleksson, brother (deceased)"
             - "Kóri Brandrsson, husband"
             - "Vigar Kórisson, son"
+    runfrid:
+        answers:
+            - "Runfrid Hildirsdotter"
+            - "I have seen twenty-five midsummers"
+            - "Strawberry blonde hair down to my lower back. My eyes are mis-matching, with one sapphire blue and one pale grey."
+            - "Visiting my husband's memorial. It had been six months since he threw himself into Rán's embrace"
+            - "I wanted to forgive him for what he did to me, to his family, to his children"
+            - "Hildir Gormsson and Arna Kórisdotter. They died in a fire three years ago"
+            - "I think quite normal. I learned all the things I needed to keep a household, and when I was fourteen midsummers, I married Mór Bjalfisson. Of course, my grandmother also taught me runes and the art of magic"
+            - "Yes, I am good at diplomacy. I had to, to handle the household after my father-in-law died and Mór was out on Viking"
+            - "My sister Snöfrid, but she moved to the other side of the country, so I rarely see her"
+            - "As I said, I am good at diplomacy"
+            - "None I wish to speak about"
+            - "It has never been something I needed to do"
+            - "Quite a few different kinds"
+            - "I am not sure what that is"
+            - "I practice runes in secret, so my brother-in-law does not find out. Mór never minded, but Leifr is Christian and does not like the old faith"
+            - "Holding my daughter in my arms. That something so precious could come from me and Mór"
+            - "No"
+            - "I talk to myself"
+            - "Honour and family above everything"
+        pronouns: She
+        stories:
+            - (unnamed)
+        status: alive
+        era: "Iron Age"
+        age: 25
+        origin: Norway
+        allegiance: Old faith
+        culture: Scandinavian
+        family:
+            - "Hildir Gormsson, father (deceased)"
+            - "Arna Korisdotter, mother (deceased)"
+            - "Snöfrid Hildirsdotter, sister"
+            - "Mór Bjalfisson, husband (deceased)"
+            - "Ragna Mórsdotter, daughter"
+            - "Bjalfi Mórsson, son"
+            - "Yngvi Mórsson, son"
     helga:
         answers:
             - "Helga Yngvesdotter, though also sometimes Helga Ramn, which means raven"

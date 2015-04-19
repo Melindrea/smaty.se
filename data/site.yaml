@@ -40,6 +40,9 @@ navigation:
             mio-singh:
                 path: /characters/mio-singh
                 item: Mio
+            runfrid-hildrisdotter:
+                path: /characters/runfrid-hildrisdotter
+                item: Runfrid
             vanja-hulth:
                 path: /characters/vanja-hulth
                 item: Vanja
