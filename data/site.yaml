@@ -34,9 +34,15 @@ navigation:
             katja-bradley:
                 path: /characters/katja-bradley
                 item: Katja
+            linda-wijk:
+                path: /characters/linda-wijk
+                item: Linda
             mio-singh:
                 path: /characters/mio-singh
                 item: Mio
+            vanja-hulth:
+                path: /characters/vanja-hulth
+                item: Vanja
     locations:
         path: /locations
         item: Locations

@@ -66,7 +66,7 @@ characters:
         answers:
             - "Helga Yngvesdotter, though also sometimes Helga Ramn, which means raven"
             - "Seventeen years"
-            - "Curly black hair with bleached ends, dark skin and dark eyes, near black in shade. A blaumann, in fact"
+            - "Curly black hair with bleached ends, dark skin and dark eyes, a dark brown shade. A blaumann, in fact"
             - "Being pulled out of the ocean after nearly drowning. The King's men called me a changeling and threw me into the water, after they executed my father and my stepmother. Joke's on them, though. I will get my vengeance"
             - "In the long term, I want to avenge my father. Short term, I have been tasked by the deity Ran to recover an important artifact that will help me gain what I need. As her priestess, I will have power"
             - "My father was Yngve Agrarsson, a chieftain in Viken. He bought my mother from a merchant on one of his travels, and gave her the name Svaneblau--the Black Swan. He loved her so much that he married her, despite everything. And she loved him"
@@ -135,6 +135,74 @@ characters:
             - "Magdalene Bradley, mother"
             - "Robert Bradley, brother"
             - "Sia Starholm, girlfriend"
+    vanja:
+        answers:
+            - "Vanja Hulth"
+            - "16. Well, almost, my birthday is in July"
+            - "Do I have to? Reddish blonde hair, bluish-grey eyes. Tall, I guess, with long legs"
+            - "Moved in with my grandpa, since my parents decided that they prefered doing volunteer work in Rwanda to dealing with their offspring. They'd promised me my own apartment when I went to school, but since I've been, in their words 'acting up', they decided to punish me by sending me to grandpa, who I don't even know"
+            - "I want to be a musician. The best musician in the world"
+            - "Tina and Rolf. Mom's a doctor, and dad's a carpenter"
+            - "I just finished my basic years in Stockholm, and since my parents were going to Rwanda, they suggested I continue in Uddevalla. Going to study music there"
+            - "Not really. I'm a private person, and some people were picking on me, which made me even more careful with what I let people know about me"
+            - "No, I don't"
+            - "Don't make me laugh"
+            - "Hey, I don't cut"
+            - "Not exactly something I've needed to learn, no"
+            - "Simple cakes, at least"
+            - "I don't even know how to drive"
+            - "I play the violin decently, though I can get better"
+            - "The day I realised that the reason I feel uncomfortable with all the 'girly' things my mom wants me to have and do is because I'm not a girl. Gender's not a binary, and I'm somewhere else on the spectrum"
+            - "No"
+            - "I don't think I have any, really"
+            - "I'm not even sure on where to begin with that question"
+        pronouns: They
+        stories:
+            - The Fiddler
+        status: alive
+        era: Contemporary
+        age: 15
+        origin: "Stockholm, Sweden"
+        allegiance: Unaligned
+        culture: Swedish
+        family:
+            - "Rolf Hulth, father"
+            - "Tina Hulth, mother"
+            - "Johannes Eriksson, grandfather"
+            - "Linnea Eriksson, grandmother (deceased)"
+    linda:
+        answers:
+            - "Linda Wijk"
+            - "25"
+            - "Brown shoulder-length hair, dark blue eyes, the kind of skin that goes from pale to burned, but never over to tanned. Tall, I guess"
+            - "Preparing to head home for the summer, I study mathematics at Uppsala University"
+            - "Finish my masters so I can go into researching. My dream is to win the Fields Medal"
+            - "Mom's Margareta, she's worked long shifts as a nurse at the hospital for as long as I remember. I don't know who my father is, it was a one-night-stand, from what I understand. Until I was seven, it was just me and my aunt Helen, but Helen died in the accident that cost me my leg, so then it was just me and mom"
+            - "Basic school years in Tanumshede and Uddevalla, then Bachelor's degree in mathematics at Uppsala University, and now a Master's degree at Uppsala"
+            - "No, I prefer a few really close friends to several shallow ones"
+            - "I used to, but Sofi and I drifted apart and lost touch when I moved to Uppsala"
+            - "Not really, I'm not very social"
+            - "Several, mainly from the car accident when I was seven. I was trapped in the car for four hours, and they had to cut my leg off"
+            - "Decently, I can at least read a map"
+            - "Some, though I prefer cookies"
+            - "Very, very basic, yes"
+            - "I know how to count the way the Egyptians did, if that counts"
+            - "We had a substitute teacher when I was sixteen, who really loved mathematics. She spent the three weeks we had her teaching us interesting facts, rather than just going by the book"
+            - "Snakes. I just can't stand them"
+            - "I smoke. Yeah, I know, but it's, well, a bad habit"
+            - "I guess so. I follow the laws, and I try to be a good person"
+        pronouns: She
+        stories:
+            - Why did it have to be snakes?
+        status: alive
+        era: Contemporary
+        age: 25
+        origin: "Tanumshede, Sweden"
+        allegiance: Unaligned
+        culture: Swedish
+        family:
+            - "Margareta Wijk, mother"
+            - "Helen Wijk, aunt (deceased)"
     mio:
         answers:
             - "Legally, or the name I've taken for myself? If the second, Mio Singh. I'd prefer not to share my legal name, if it's all the same"
