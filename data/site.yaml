@@ -12,7 +12,7 @@ assemble:
 
 site:
     title: Småty in the land
-    titleSeparator: "||"
+    titleSeparator: "/"
 
 navigation:
     index:

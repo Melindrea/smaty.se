@@ -81,7 +81,7 @@
   "scripts": {
     "prebuild": "npm run assemble clean && npm run assemble",
     "build": "gulp build",
-    "postbuild": "node lib/html-validator.js",
+    "postbuild": "node lib/html-validator.js && node lib/meta-validator.js",
     "assemble": "./node_modules/assemble/bin/assemble.js",
     "issues": "watson -s dirty",
     "issuesJson": "watson -s dirty --format json && mv .watsonresults watson.json",
