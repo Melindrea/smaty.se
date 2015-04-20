@@ -64,12 +64,12 @@ characters:
             - "Vigar Kórisson, son"
     runfrid:
         answers:
-            - "Runfrid Hildirsdotter"
+            - "Runfrid Hildrisdotter"
             - "I have seen twenty-five midsummers"
-            - "Strawberry blonde hair down to my lower back. My eyes are mis-matching, with one sapphire blue and one pale grey."
+            - "Strawberry blonde hair down to my lower back. My eyes are mis-matching, with one sapphire blue and one pale grey"
             - "Visiting my husband's memorial. It had been six months since he threw himself into Rán's embrace"
             - "I wanted to forgive him for what he did to me, to his family, to his children"
-            - "Hildir Gormsson and Arna Kórisdotter. They died in a fire three years ago"
+            - "Hildri Gormsson and Arna Kórisdotter. They died in a fire three years ago"
             - "I think quite normal. I learned all the things I needed to keep a household, and when I was fourteen midsummers, I married Mór Bjalfisson. Of course, my grandmother also taught me runes and the art of magic"
             - "Yes, I am good at diplomacy. I had to, to handle the household after my father-in-law died and Mór was out on Viking"
             - "My sister Snöfrid, but she moved to the other side of the country, so I rarely see her"
@@ -85,7 +85,7 @@ characters:
             - "Honour and family above everything"
         pronouns: She
         stories:
-            - (unnamed)
+            - Forgive and forget
         status: alive
         era: "Iron Age"
         age: 25
@@ -93,9 +93,9 @@ characters:
         allegiance: Old faith
         culture: Scandinavian
         family:
-            - "Hildir Gormsson, father (deceased)"
+            - "Hildri Gormsson, father (deceased)"
             - "Arna Korisdotter, mother (deceased)"
-            - "Snöfrid Hildirsdotter, sister"
+            - "Snöfrid Hildrisdotter, sister"
             - "Mór Bjalfisson, husband (deceased)"
             - "Ragna Mórsdotter, daughter"
             - "Bjalfi Mórsson, son"
