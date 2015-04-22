@@ -6,6 +6,7 @@
     "modernizr": "~2.8.1",
     "normalize.css": "~3.0.2",
     "normalize-opentype.css": "~0.2.4",
-    "typeplate-starter-kit": "~2.1.0"
+    "typeplate-starter-kit": "~2.1.0",
+    "magnific-popup": "~1.0.0"
   }
 }

@@ -49,6 +49,10 @@ navigation:
     locations:
         path: /locations
         item: Locations
+        children:
+            gallery:
+                path: /locations/gallery
+                item: Gallery
     stories:
         path: /stories
         item: Stories

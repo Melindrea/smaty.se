@@ -22,6 +22,7 @@ var assemble = require('assemble'),
     filter = require('gulp-filter'),
     tagVersion = require('gulp-tag-version'),
     permalinks = require('./lib/permalinks.js'),
+    bufferPages = require('./lib/pages.js'),
     browserSync = require('browser-sync'),
     reload = browserSync.reload,
     config = require('./config.js'),
@@ -41,6 +42,7 @@ helpers = helperFiles.reduce(function (acc, fp) {
 // Load system - These three should be broken out and put in assemble-system
 assemble.layouts(system.root + '/' + system.layouts + '/**.hbs');
 assemble.helpers(helpers);
+assemble.helpers(require('handlebars-helpers'));
 assemble.helper('moment', require('helper-moment'));
 assemble.partials(system.root + '/' + system.partials + '/**/**.hbs');
 assemble.data(system.root + '/data/**/*.{yaml,json}');
@@ -63,6 +65,13 @@ assemble.task('pages', ['jshint'], function () {
         .pipe(assemble.dest('.tmp'));
 });
 
+assemble.task('buffer', function () {
+    var baseContentDir = content.root + '/pages';
+    assemble.src(baseContentDir + '/**/*.md')
+        .pipe(bufferPages())
+        .pipe(assemble.dest('data'));
+});
+
 assemble.task('newsletters', function () {
     var baseContentDir = content.root + '/newsletters';
     assemble.src(baseContentDir + '/**/*.md', {layout: 'email'})
@@ -73,8 +82,7 @@ assemble.task('newsletters', function () {
 });
 
 assemble.task('resources', function () {
-        assemble.copy('resources/**/*', buildDir);
-
+    assemble.copy('resources/**/*', buildDir);
 });
 
 function bumpAndTag(importance) {
