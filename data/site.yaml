@@ -57,6 +57,12 @@ navigation:
         path: /stories
         item: Stories
         children:
+            shards-of-the-eld:
+                path: /stories/shards-of-the-eld
+                item: Shards of the Eld
+            flashfiction:
+                path: /stories/flashfiction
+                item: Flashfiction
             microfiction:
                 path: /stories/microfiction
                 item: Microfiction

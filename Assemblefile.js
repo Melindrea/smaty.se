@@ -117,7 +117,7 @@ assemble.task('jshint', function () {
         .pipe(reload({stream: true, once: true}))
         .pipe(gp.jshint())
         .pipe(gp.jshint.reporter('jshint-stylish'))
-        .pipe(gp.if(!browserSync.active, gp.jshint.reporter('fail')));
+        .pipe(gp.if(! browserSync.active, gp.jshint.reporter('fail')));
 });
 
 assemble.task('serve', ['clean', 'pages', 'styles', 'fonts'], function () {
