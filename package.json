@@ -9,6 +9,11 @@
   "bugs": {
     "url": "http://github.com/Melindrea/smaty.se/issues"
   },
+  "description": "The assemble-built core system for the smaty.se site",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/melindrea/smaty.se/blob/master/LICENSE"
+  },
   "repository": {
     "type": "git",
     "url": "http://github.com/npm/npm.git"
@@ -76,6 +81,7 @@
     "sprintf-js": "^1.0.2",
     "through2": "^0.6.3",
     "underscore.string": "^2.4.0",
+    "verb": "^0.7.4",
     "vinyl": "^0.4.6",
     "walk": "^2.3.9",
     "wiredep": "^2.0.0",
@@ -96,6 +102,7 @@
     "deploy": "gulp cache-busting && ./bin/deploy",
     "predrydeploy": "npm run predeploy",
     "drydeploy": "gulp cache-busting",
-    "server": "cd build && python -m SimpleHTTPServer 9000"
+    "server": "cd build && python -m SimpleHTTPServer 9000",
+    "readme": "verb readme"
   }
 }
