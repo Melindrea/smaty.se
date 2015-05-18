@@ -18,7 +18,8 @@ var gulp = require('gulp'),
     // htmlmin = require('gulp-htmlmin'),
     robots = require('gulp-robots'),
     permalinks = require('./lib/permalinks'),
-    pkg = require('./package.json'),
+    bufferPages = require('./lib/pages'),
+    pkg = require('./package'),
     buildDir = pkg.config.buildDir,
     deployDir = pkg.config.deployDir;
 
@@ -32,6 +33,13 @@ gulp.task('images', function () {
             svgoPlugins: [{cleanupIDs: false}]
         })))
         .pipe(gulp.dest(buildDir + '/assets/images'));
+});
+var matter = require('gulp-gray-matter');
+gulp.task('buffer', function () {
+    gulp.src('content/pages/**/*.md')
+        .pipe(matter())
+        .pipe(bufferPages())
+        .pipe(gulp.dest('data'));
 });
 
 gulp.task('styles', function () {
