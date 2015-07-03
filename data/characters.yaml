@@ -46,7 +46,8 @@ characters:
             - "Bóthildr Warrior"
         pronouns: She
         stories:
-            - Awaiting Valhalla
+            -
+                name: Awaiting Valhalla
         status: alive
         era: "Iron Age"
         age: 19
@@ -62,6 +63,78 @@ characters:
             - "Sigurd Gudhleksson, brother (deceased)"
             - "Kóri Brandrsson, husband"
             - "Vigar Kórisson, son"
+    alexis:
+        answers:
+            - "Alexis. Falk, if you want all of it, I guess"
+            - "I turned seventeen in April"
+            - "Wavy nut-brown hair, eyes that shift in blue, green or grey depending on my mood. Normal height, I guess"
+            - "Packing, getting ready for summer camp. Some kind of chirpy, cheerful “let’s get troubled teens back on their feet” crap, but eh, I even get paid a bit"
+            - "To make it all go away. Though, maybe not Helene. I know she’s dead, and that she’s a hallucination, but I miss her so much"
+            - "Do I have to …? Okay. My mother Simona is a paranoid schizophrenic who’s in an institution for kidnapping and murder. I don’t know where my dad is. He walked out on me and mom when I was five, right before I was put in the system because mom’s bug-fuck crazy"
+            - "Eh, schools. I guess I learned the basics, at least"
+            - "Does the “crazy killer’s daughter” make friends easily? Yeah, right"
+            - "I did. Helene is—was—close as a sister to me"
+            - "Not really, no"
+            - "Are we talking mental or physical? I’ve got plenty of both, from mom’s religious torture, and … well, myself"
+            - "I don’t know. I guess I didn’t suck at it in school"
+            - "Nope"
+            - "Nope"
+            - "I can throw my voice"
+            - "Walking into a foster home for the first time, and realising that the only one who’ll fight for me is me"
+            - "I’m afraid of drowning, of being locked in small spaces, and … well, of certain Judeo-Christian symbols"
+            - "I pick my nose and bite my nails"
+            - "I swore, once I got away from my mother, that I would never wilfully hurt anyone, and that I would do whatever I could to protect people from getting hurt. It’s gotten me beaten up by bullies from time to time, but better me than the weaker kids"
+        names:
+        pronouns: She
+        stories:
+            -
+                name: Halfway-house of Souls
+        status: alive
+        era: "Contemporary"
+        age: 17
+        origin: Gothenburg
+        allegiance: Self
+        culture: Swedish
+        family:
+            - "Henrik Falk, father"
+            - "Simona Falk, mother"
+            - "Helene Jansson, foster-sister (deceased)"
+    yngve:
+        answers:
+            - "Yngve Jarl"
+            - "I'm sixteen"
+            - "Afro mohawk with shaved patterns on the sides of my head, enough chains-and-studs to be seriously in trouble in a fight with Magneto, still-too-feminine features, and hazel eyes. A copper dragon climbing through and around my right ear, a ring through my left eyebrow, and a stud through my tongue. For other piercings, we’ll need to get better acquainted"
+            - "Celebrating summer by watching my peers, alone"
+            - "To make a true connection, if only for a night"
+            - "Please don’t remind me. Dad’s in prison for killing my sister (though her body’s never been found, and he denies it, not that I believe him), and mom couldn’t handle the stress of that and me being trans (“both my girls are gone!”), so I was shunted into foster care when I was twelve"
+            - "Okay, I guess. I’ve been through a few schools, but Tanum's is decent enough"
+            - "Not really. They’re generally too busy gossiping to care about me"
+            - "Nope"
+            - "Don’t make me laugh"
+            - "Plenty, both burns and cuts from dad, but also a few scarification tattoos. My favourite is a series of runes on my right shoulder"
+            - "Sure, we used to sail a lot before Mia-Maria disappeared"
+            - "Not well, at least"
+            - "No, but I do know boats"
+            - "I dunno"
+            - "Coming out as trans—and my sister’s full acceptance, my sister’s disappearance and the trial against my dad, or being abandoned by my mom"
+            - "No, not really"
+            - "I don’t think I have too many"
+            - "Doesn’t everyone have some kind of code not to hurt people if they can help it?"
+        names:
+        pronouns: He
+        stories:
+            -
+                name: Solitary Duality
+                href: /stories/solitary-duality
+        status: alive
+        era: "Contemporary"
+        age: 16
+        origin: Sweden
+        culture: Swedish
+        family:
+            - "Johannes Jarl, father"
+            - "Amina Jarl, mother"
+            - "Mia-Maria Jarl, sister (deceased)"
     runfrid:
         answers:
             - "Runfrid Hildrisdotter"
@@ -85,7 +158,8 @@ characters:
             - "Honour and family above everything"
         pronouns: She
         stories:
-            - Forgive and forget
+            -
+                name: Forgive and forget
         status: alive
         era: "Iron Age"
         age: 25
@@ -127,7 +201,8 @@ characters:
             - "Helga of Ran"
         pronouns: She
         stories:
-            - Last Priestess of Ran
+            -
+                name: Last Priestess of Ran
         status: alive
         era: "Iron Age"
         age: 17
@@ -161,7 +236,14 @@ characters:
             - "I never thought so. Lately, I'm not as sure"
         pronouns: She
         stories:
-            - (Three unnamed novels)
+            -
+                name: Shards of the Eld
+                href: /stories/shards-of-the-eld
+            -
+                name: Bound by Blood
+            -
+                name: Moments Lost
+
         status: alive
         era: Contemporary
         age: 27
@@ -196,7 +278,8 @@ characters:
             - "I'm not even sure on where to begin with that question"
         pronouns: They
         stories:
-            - The Fiddler
+            -
+                name: The Fiddler
         status: alive
         era: Contemporary
         age: 15
@@ -231,7 +314,8 @@ characters:
             - "I guess so. I follow the laws, and I try to be a good person"
         pronouns: She
         stories:
-            - Why did it have to be snakes?
+            -
+                name: Why did it have to be snakes?
         status: alive
         era: Contemporary
         age: 25
@@ -241,9 +325,9 @@ characters:
         family:
             - "Margareta Wijk, mother"
             - "Helen Wijk, aunt (deceased)"
-    mio:
+    satinder:
         answers:
-            - "Legally, or the name I've taken for myself? If the second, Mio Singh. I'd prefer not to share my legal name, if it's all the same"
+            - "Legally, or the name I've taken for myself? If the second, Satinder Singh. I'd prefer not to share my legal name, if it's all the same"
             - "I'm twenty-five"
             - "Do I have to ...? Okay. Blonde. Blue eyes. Average height, I guess. I'm not a 'rye-blonde Nordic viking', if that's what you're asking. I am pleased that I finally managed to grow a beard, though"
             - "On an island in the Bohuslän archipelago, fleeing from my pain after miscarrying"
@@ -265,7 +349,8 @@ characters:
         status: alive
         pronouns: They
         stories:
-            - The Angel Maker (working title)
+            -
+                name: The Angel Maker
         era: Contemporary
         age: 25
         origin: "Grebbestad, Sweden"

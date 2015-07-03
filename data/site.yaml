@@ -25,6 +25,9 @@ navigation:
         path: /characters
         item: Characters
         children:
+            alexis-falk:
+                path: /characters/alexis-falk
+                item: Alexis
             bothildr-gudhleksdotter:
                 path: /characters/bothildr-gudhleksdotter
                 item: Bóthildr
@@ -37,15 +40,18 @@ navigation:
             linda-wijk:
                 path: /characters/linda-wijk
                 item: Linda
-            mio-singh:
-                path: /characters/mio-singh
-                item: Mio
             runfrid-hildrisdotter:
                 path: /characters/runfrid-hildrisdotter
                 item: Runfrid
+            satinder-singh:
+                path: /characters/satinder-singh
+                item: Satinder
             vanja-hulth:
                 path: /characters/vanja-hulth
                 item: Vanja
+            yngve-jarl:
+                path: /characters/yngve-jarl
+                item: Yngve
     locations:
         path: /locations
         item: Locations
@@ -60,6 +66,9 @@ navigation:
             shards-of-the-eld:
                 path: /stories/shards-of-the-eld
                 item: Shards of the Eld
+            solitary-duality:
+                path: /stories/solitary-duality
+                item: Solitary Duality
             flashfiction:
                 path: /stories/flashfiction
                 item: Flashfiction
