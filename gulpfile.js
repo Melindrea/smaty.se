@@ -19,6 +19,7 @@ var gulp = require('gulp'),
     robots = require('gulp-robots'),
     permalinks = require('./lib/permalinks'),
     bufferPages = require('./lib/pages'),
+    config = require('./config'),
     pkg = require('./package'),
     buildDir = pkg.config.buildDir,
     deployDir = pkg.config.deployDir;
@@ -34,12 +35,17 @@ gulp.task('images', function () {
         })))
         .pipe(gulp.dest(buildDir + '/assets/images'));
 });
-var matter = require('gulp-gray-matter');
+
 gulp.task('buffer', function () {
     gulp.src('content/pages/**/*.md')
-        .pipe(matter())
-        .pipe(bufferPages())
+        .pipe(bufferPages('buffer', 'buffer.json', 'data', config))
         .pipe(gulp.dest('data'));
+});
+
+gulp.task('rss', function () {
+    gulp.src('content/pages/**/*.md')
+        .pipe(bufferPages('rss', 'rss.xml', buildDir, config))
+        .pipe(gulp.dest(buildDir));
 });
 
 gulp.task('styles', function () {
@@ -120,6 +126,6 @@ gulp.task('cache-busting', function () {
         .pipe(gulp.dest(deployDir));
 });
 
-gulp.task('build', ['html', 'sitemap'], function () {
+gulp.task('build', ['html', 'sitemap', 'rss'], function () {
   return gulp.src(buildDir + '/**/*').pipe(gp.size({title: 'build', gzip: true}));
 });

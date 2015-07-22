@@ -13,6 +13,9 @@ assemble:
 site:
     title: Småty in the land
     titleSeparator: "/"
+    copyright: "2015 Marie Hogebrandt"
+    language: en
+    publishedDate: "March 8, 2015 15:00:00 GMT"
 
 navigation:
     index:
@@ -78,9 +81,9 @@ navigation:
             nanowrimo:
                 path: /stories/nanowrimo
                 item: NaNoWriMo
-    wip-teasers:
-        path: /wip-teasers
-        item: Teasers
+            wip-teasers:
+                path: /stories/wip-teasers
+                item: Teasers
     author:
         path: /author
         item: Bio

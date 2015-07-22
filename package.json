@@ -1,6 +1,10 @@
 {
   "name": "smaty.se",
-  "author": "Marie Hogebrandt <iam@mariehogebrandt.se> (http://mariehogebrandt.se)",
+  "author": {
+    "name": "Marie Hogebrandt",
+    "email": "iam@mariehogebrandt.se",
+    "url": "http://mariehogebrandt.se"
+  },
   "private": true,
   "engines": {
     "node": ">=0.10.0"
@@ -9,7 +13,7 @@
   "bugs": {
     "url": "http://github.com/Melindrea/smaty.se/issues"
   },
-  "description": "The assemble-built core system for the smaty.se site",
+  "description": "Character interviews, story teasers, updates and more about the Småty world",
   "license": {
     "type": "MIT",
     "url": "https://github.com/melindrea/smaty.se/blob/master/LICENSE"
@@ -32,7 +36,6 @@
     "fontfaceobserver": "^1.4.3",
     "gh": "^1.11.4",
     "glob": "^4.3.1",
-    "gray-matter": "^2.0.0",
     "gulp": "^3.6.0",
     "gulp-bump": "^0.2.2",
     "gulp-cache": "^0.2.2",
@@ -40,8 +43,9 @@
     "gulp-csso": "^0.2.6",
     "gulp-extname": "^0.2.0",
     "gulp-filter": "^2.0.2",
-    "gulp-front-matter": "^1.2.2",
+    "gulp-front-matter": "^1.2.3",
     "gulp-git": "^1.1.0",
+    "gulp-gray-matter": "^2.2.1",
     "gulp-htmlmin": "^1.1.1",
     "gulp-if": "^1.2.5",
     "gulp-imagemin": "^2.0.0",
@@ -75,12 +79,12 @@
     "rss": "^1.1.1",
     "sitemap": "^0.7.4",
     "sprintf-js": "^1.0.2",
-    "through2": "^0.6.3",
-    "underscore.string": "^2.4.0",
+    "underscore": "^1.8.3",
     "verb": "^0.7.4",
     "vinyl": "^0.4.6",
     "walk": "^2.3.9",
     "wiredep": "^2.0.0",
+    "xml-escape": "^1.0.0",
     "yamljs": "^0.2.1",
     "yargs": "^3.5.3"
   },
@@ -100,5 +104,11 @@
     "drydeploy": "gulp cache-busting",
     "server": "cd build && python -m SimpleHTTPServer 9000",
     "readme": "verb readme"
+  },
+  "dependencies": {
+    "gray-matter": "^2.0.0",
+    "request": "^2.60.0",
+    "through2": "^0.6.3",
+    "underscore.string": "^3.1.1"
   }
 }
