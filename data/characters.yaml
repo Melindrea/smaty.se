@@ -178,13 +178,13 @@ characters:
         answers:
             - "Helga Yngvesdotter, though also sometimes Helga Ramn, which means raven"
             - "Seventeen years"
-            - "Curly black hair with bleached ends, dark skin and dark eyes, a dark brown shade. A blaumann, in fact"
-            - "Being pulled out of the ocean after nearly drowning. The King's men called me a changeling and threw me into the water, after they executed my father and my stepmother. Joke's on them, though. I will get my vengeance"
-            - "In the long term, I want to avenge my father. Short term, I have been tasked by the deity Ran to recover an important artifact that will help me gain what I need. As her priestess, I will have power"
-            - "My father was Yngve Agrarsson, a chieftain in Viken. He bought my mother from a merchant on one of his travels, and gave her the name Svaneblau--the Black Swan. He loved her so much that he married her, despite everything. And she loved him"
+            - "Curly black hair with bleached ends, dark skin and grey eyes. A blaumann"
+            - "Preparing to address my people. The King's men called me a changeling and threw me into the water after they executed my father and my stepmother. Joke's on them, though. I will get my vengeance"
+            - "In the long term, I want to avenge my father. Short term, I have been tasked by the deity Ran to recover an important artefact that will help me gain what I need. As her priestess, I will have power"
+            - "My father was Yngve Agrarsson, a chieftain in Viken. He bought my mother in Constantinople, and called her Svaneblau—the Black Swan, as her given name was too hard for him to pronounce. He loved her so much that he married her. And she loved him"
             - "My mother taught me songs from her homeland, and my stepmother Torun Hildingsdotter taught what I would need to know as my father's heir. I think it hurt her that she could never bear my father a son, but she never took it out on me. I think she loved me like a daughter"
             - "Yes, I do"
-            - "Saga. She was born a thrall on my father's estate, and is a few years younger than I am"
+            - "Saga. She was born a thrall on my father's estate, and is a year younger than I am"
             - "Yes, I can talk people into a lot of things"
             - "Above my left eye. I fell from a horse"
             - "Decently. My father thought it was important I knew how to"
@@ -201,6 +201,8 @@ characters:
             - "Helga of Ran"
         pronouns: She
         stories:
+            -
+                name: Out of Ocean and Ashes
             -
                 name: Last Priestess of Ran
         status: alive
