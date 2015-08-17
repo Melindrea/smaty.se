@@ -1,0 +1,76 @@
+#!/usr/bin/env node
+
+var argv = require('yargs').argv,
+    _s = require('underscore.string'),
+    sprintf = require('sprintf-js').sprintf,
+    YAML = require('yamljs'),
+    fs = require('fs'),
+    workingDir = argv.workingDir || process.cwd(),
+    dataDir = argv.dataDir || workingDir + '/data',
+    siteConfig =  YAML.load(dataDir + '/site.yaml'),
+    types = {
+        page: {
+            parent: false
+        },
+        post: {
+            parent: 'blog'
+        },
+        location: {
+            parent: 'locations'
+        },
+        story: {
+            parent: 'stories'
+        },
+        character: {
+            parent: 'characters'
+        }
+    },
+    type = argv._[0],
+    title = argv.title,
+    slug = argv.slug || _s.slugify(title),
+    key = argv.key || null,
+    layout = argv.layout || null,
+    filename, parent, meta, yaml, files = [];
+
+if (! (type in types)) {
+    console.log('The type', type, 'is not supported');
+    return;
+}
+
+// Load site.yaml and add the new page
+// If character, load characters.yaml and add new object with title
+//
+
+parent = (types[type].parent) ? types[type].parent : false;
+filename = sprintf('%s/content/pages/%s/%s.md', workingDir, parent || '', slug);
+meta = {
+    shortTitle: title,
+    pageTitle: title,
+    title: title,
+    tweetables: [],
+    facebookables: [],
+    excerpt: title
+};
+
+if (parent) {
+    meta.parent = parent;
+    meta.hasSubmenu = true;
+}
+
+if (key) {
+    meta.key = key;
+}
+
+if (layout) {
+    meta.layout = layout;
+}
+
+yaml = sprintf('---\n%s---\n\n', YAML.stringify(meta, 4));
+
+files[filename] = sprintf('%sTemporary text', yaml);
+
+for (var file in files) {
+    console.log('Writing to', file);
+    fs.writeFile(file, files[file]);
+}
+

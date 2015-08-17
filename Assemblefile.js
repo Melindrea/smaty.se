@@ -52,6 +52,7 @@ assemble.option('media', config.media);
 assemble.option('gtm', config.gtm);
 assemble.option('character', config.character);
 assemble.option('contentDir', content.root);
+assemble.option('pkg', config.pkg);
 
 assemble.task('pages', ['jshint'], function () {
     var baseContentDir = content.root + '/pages';

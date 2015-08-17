@@ -9,6 +9,11 @@ assemble:
         root: content
     options:
         layout: markdown
+    assets:
+        root: assets
+        images:
+            root: assets/images
+            headers: assets/images/headers
 
 site:
     title: Småty in the land
