@@ -73,6 +73,7 @@
     "helper-moment": "^0.1.0",
     "html5-lint": "^0.2.5",
     "jshint-stylish": "^1.0.0",
+    "main-bower-files": "^2.9.0",
     "moment": "^2.9.0",
     "opn": "^1.0.0",
     "remarkable": "^1.6.0",
